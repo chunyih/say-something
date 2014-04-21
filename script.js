@@ -26,7 +26,7 @@ function enumerate(list) {
   
   while (current.next !== null) {
     current = current.next;
-    arr.push(current.val);
+    arr.push(current.val); // options: name, val, time
   }
   
   return arr;
@@ -37,6 +37,8 @@ var list = new LinkedList(node1);
 console.log(list);
 console.log(enumerate(list));
 
+
+// Main script
 jQuery(document).ready(function($) {
   var person, prePerson;
   
