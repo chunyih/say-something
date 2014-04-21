@@ -79,7 +79,6 @@ jQuery(document).ready(function($) {
       // Append chat content as a node to the list
       append(list, new Node(person, text, timeStr));
       console.log(enumerate(list));
-      console.log($('div.chatContent').height());
       
       $("div.jumbotron").scrollTop($('div.chatContent').height());
       $('div.chatContent p').last().animate({opacity: 1}, 500);
