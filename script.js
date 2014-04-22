@@ -44,16 +44,16 @@ jQuery(document).ready(function($) {
   
   // Select Person
   person = $('button.person').text().trim();
-  $('li.person').on('click', function(){
+  $('li.person').on('click', function(e){
+    e.preventDefault();
     person = $(this).text().trim();
     prePerson = $('button.person').text();
     $(this).html("<a href='#'>"+prePerson+"</a>");
     $('button.person').html(person+" <span class='caret'></span>");
-    event.preventDefault();
   });
-  $('button.person').on('click', function(){
+  $('button.person').on('click', function(e){
+    e.preventDefault();
     person = $(this).text().trim();
-    event.preventDefault();
   });
   
   // On text input enter
