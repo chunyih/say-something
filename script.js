@@ -59,7 +59,6 @@ jQuery(document).ready(function($) {
   // On text input enter
   $('input.chatInput').keypress(function(event){
     if(event.keyCode === 13) {
-      keyDownFlag = 1;
       var time, timeStr, sec, text;
       
       // Set time string
